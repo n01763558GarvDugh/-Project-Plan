@@ -160,10 +160,8 @@ body {
     object-fit: cover;
 }
 
-.step-icon { width: 75px; height: 75px; }
-.step-icon-a { width: 65px; height: 80px; }
-.step-icon-b { width: 100px; height: 35px; }
-.step-icon-c { width: 100px; height: 60px; }
+.step-icon { width: 100px; height: 82px; }
+.step-icon-b { width: 100px; height: 60px; }
 
 .step-text {
     display: inline-block;
