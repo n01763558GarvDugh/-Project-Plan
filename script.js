@@ -29,24 +29,6 @@ function updateProgressBar() {
   progressBar.style.width = scrollPercent + '%';
 }
 
-// Show a badge when user scrolls near bottom of the page
-function showCompletionBadge() {
-  const scrollY = window.pageYOffset;
-  const pageHeight = document.body.scrollHeight - window.innerHeight;
-  const scrollPercent = (scrollY / pageHeight) * 100;
-
-  const badge = document.getElementById('completionBadge');
-
-  if (scrollPercent > 90) {
-    badge.classList.add('show'); // Show badge
-
-    // Hide it again after 3 seconds
-    setTimeout(() => {
-      badge.classList.remove('show');
-    }, 3000);
-  }
-}
-
 // Make steps appear smoothly when they come into view
 function animateStepsOnScroll() {
   const steps = document.querySelectorAll('.step');
